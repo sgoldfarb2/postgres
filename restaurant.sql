@@ -28,3 +28,15 @@
 -- SELECT * FROM restaurant WHERE last_time_you_ate_there < '2019-04-02' AND last_time_you_ate_there > '2019-03-29';
 -- SELECT * FROM restaurant WHERE last_time_you_ate_there < '2019-04-02' AND last_time_you_ate_there > '2019-03-29' AND stars = 2;
 
+-- INSERT INTO restaurant VALUES (DEFAULT, 'restaurant9', 25, 5, 'coffee', 'coffee', TRUE, '2019-01-04');
+-- INSERT INTO restaurant VALUES (DEFAULT, 'restaurant10', 30, 5, 'fast food', 'apple pie', TRUE, '2019-01-04');
+
+-- PART TWO OF HOMEWORK
+-- SELECT * FROM restaurant ORDER BY distance;
+-- SELECT * FROM restaurant ORDER BY distance DESC LIMIT 2;
+-- SELECT * FROM restaurant ORDER BY stars LIMIT 2;
+-- SELECT * FROM restaurant ORDER BY distance > 21, stars DESC LIMIT 2;
+-- SELECT COUNT(*) FROM restaurant;
+-- SELECT COUNT(*) FROM restaurant GROUP BY category;
+-- SELECT AVG(stars) FROM restaurant GROUP BY category;
+-- SELECT MAX(stars) FROM restaurant GROUP BY category;
