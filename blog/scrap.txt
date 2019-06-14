@@ -1,0 +1,17 @@
+Used these commands to create migration files and then migrate these to our database
+
+
+sequelize model:generate --name author \
+  --attributes firstName:string,lastName:string,bio:string,headshot:string,email:string
+
+
+sequelize model:generate --name category \
+  --attributes categoryName:string,categoryDescription:string
+
+
+
+sequelize model:generate --name post \
+  --attributes postTitle:string,postAbstract:string,postBody:string,postHeroImage:string,postAuthor:integer,postCategory:integer,isHero:boolean,isPublished:boolean,publishDate:date
+
+sequelize model:generate --name comment \
+  --attributes commentTitle:string,commentBody:string,blogID:integer,commenterName:string,commenterEmail:string

@@ -1,0 +1,13 @@
+<!-- // Full table -->
+db.post.findAll()
+.then((results) => {
+var r = results[0];
+console.log(r.id, r.postTitle, r.postAbstract, r.postBody, r.postHeroImage, r.postAuthorID, r.postCategoryID,
+r.isFeatured, r.isPublished, r.publishDate, r.createdAt, r.updatedAt);
+});
+<!-- // Where clause
+db.post.findAll({where: {nickname: 'PDiddy'}})
+.then((results) => {
+var r = results[0];
+console.log(r.id, r.nickname);
+}); -->
